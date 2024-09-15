@@ -1,65 +1,71 @@
 \input{setup}
 \begin{document}
 	\maketitle
-	
 	\begin{center}
 		\begin{minipage}{0.33\textwidth}
-			\centering \href{esampat@ucsb.edu}{\textcolor{blue}{esampat@ucsb.edu}}
+			\href{https://www.linkedin.com/in/erk-sampat-500331245/}{LinkedIn}
 		\end{minipage}%
 		\begin{minipage}{0.33\textwidth}
-			\centering \href{https://www.linkedin.com/in/erk-sampat-500331245/}{\textcolor{blue}{LinkedIn}}
+			\centering
+			esampat@ucsb.edu
 		\end{minipage}%
 		\begin{minipage}{0.33\textwidth}
-			\centering \href{https://github.com/SAR-mango}{\textcolor{blue}{GitHub}}
+			\raggedleft\href{https://github.com/SAR-mango}{GitHub}
 		\end{minipage}
 	\end{center}
-	
 	\section*{SKILLS}
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\begin{itemize}
-			\setlength \itemsep{0.1em}
-			\item Power Electronics
-			\item High-Density PCB Layout
-			\item Embedded Systems
-			\item C++, C, and Python Programming
-			\item Data Structures and Algorithms
+	\begin{minipage}{0.6\textwidth}
+		\begin{itemize}[itemsep=0em]
+			\item Power electronics
+			\item Analog and digital circuit design
+			\item Circuit simulation (LTSpice)
+			\item High-density PCB design/fab/assembly (KiCAD and Altium)
+			\item Data structures and algorithms; object-oriented programming
 		\end{itemize}
 	\end{minipage}%
-	\begin{minipage}{0.5\textwidth}
-		\centering
-		\begin{itemize}
-			\setlength \itemsep{0.1em}
-			\item SPICE Circuit Simulation
-			\item PCB Fabrication and Assembly Processes
-			\item Electronics Lab Equipment
-			\item Hardware and Software Debugging
-			\item Technical Documentation; \LaTeX
+	\begin{minipage}{0.4\textwidth}
+		\begin{itemize}[itemsep=0em]
+			\item C and C++; \texttt{git}; Linux terminal
+			\item Embedded systems
+			\item Electronics lab equipment
+			\item Technical documentation; \LaTeX
+			\item Hardware and software debugging
 		\end{itemize}
 	\end{minipage}
-	
 	\section*{PROJECTS}
-	\subsection{\href{https://github.com/SAR-mango/SinESC}{\textcolor{blue}{SinESC}}}
-	Electronic motor speed controller (ESC) for drones. Supports sensorless field-oriented control for maximal power efficiency.
-	\subsection{\href{https://github.com/SAR-mango/Universal-Laser-Driver}{\textcolor{blue}{Universal Laser Driver}}}
+	\subsection{\href{https://github.com/SAR-mango/SinESC}{SinESC}}
+	Highly efficient brushless motor controller for drones. Supports sensorless field-oriented control for maximal power efficiency, resulting in increased flight time.
+	\subsection{\href{https://github.com/SAR-mango/Universal-Laser-Driver}{Universal Laser Driver}}
 	Low-power laser driver with ultra-wide input and output voltage range. Also built laser pointers of various wavelengths using the Universal Laser Driver.
-	\subsection{\href{https://github.com/SAR-mango/soldering-guide/blob/main/Soldering_Guide.pdf}{\textcolor{blue}{Soldering Guide}}}
+	\subsection{\href{https://github.com/SAR-mango/soldering-guide/blob/main/Soldering_Guide.pdf}{Soldering Guide}}
 	Comprehensive guide for soldering through-hole components by hand.
 	\subsection{RC Drones and Planes}
-	Built and flew remote-controlled drones and planes – primarily first-person-view drones, glider-style airplanes, and nitromethane-powered airplanes. Set up autopilot systems and Iridium satellite communications channel for a solar-powered airplane intended to sustain flight for multiple days.
+	Built and flew remote-controlled drones and planes -- primarily first-person-view drones, glider-style airplanes, and nitromethane-powered airplanes. Set up autopilot and Iridium satellite communications for an airplane designed to detect forest fires. Won \href{https://www.hackster.io/team-sol/tinyml-aerial-forest-fire-detection-78ec6b}{first place} in tinyML Vision Challenge.
 	\subsection{Solid-State Tesla Coil}
 	Converts line voltage to several hundred kilovolts, generating foot-long electrical arcs. Used to demonstrate high voltage and electromagnetic induction.
-	
 	\section*{EDUCATION}
-	UC Santa Barbara – B.S., Electrical Engineering (2022–2026)
-	
+	University of California, Santa Barbara -- B.S., Electrical Engineering (2022--2026)
 	\section*{EXPERIENCE}
-	Student Worker – Instructional Lab Group, UCSB Department of Physics (April 2023–present)
-	\begin{itemize}
-		\setlength \itemsep{0.1em}
-		\item Set up labs for all undergraduate physics courses
-		\item Managed inventory; repaired broken equipment
-		\item Documented lab procedures
-		\item Designed electronics projects to be incorporated into lab curriculum
+	\subsection{Power Electronics Intern -- Astranis Space Technologies (June--September 2024)}
+	\begin{itemize}[topsep=0em,itemsep=0em]
+		\item Designed, tested, and documented a radiation testing board for 16 different high-voltage diodes. Implemented high-voltage biasing, clamping, and transient fault-detection circuitry. Hardware architecture to be reused for future radiation tests.
+		\item Designed a four-channel \qty{80}{\volt}/\qty{60}{\ampere} high-side GaN load stepping board for testing flight hardware. Implemented power stage, including linear current ramp soft-starting regime. Also realized under-voltage lockout, over-current protection, and over-voltage protection. Voltage/current telemetry made accessible to the user.
+		\item Wrote a script using Google's \texttt{openhtf} to automate radiation tests for op-amps.
+		\item Assisted in debugging faulty flyback converter in battery management system.
 	\end{itemize}
+	\subsection{Student Worker -- UCSB Department of Physics (April 2023--June 2024)}
+	\begin{center}
+		\begin{minipage}{0.5\textwidth}
+			\begin{itemize}[topsep=0em,itemsep=0em]
+				\item Set up labs for all undergraduate physics courses
+				\item Managed inventory; repaired broken test equipment
+			\end{itemize}
+		\end{minipage}%
+		\begin{minipage}{0.5\textwidth}
+			\begin{itemize}[topsep=0em,itemsep=0em]
+				\item Documented lab procedures
+				\item Designed electronics projects for lab curriculum
+			\end{itemize}
+		\end{minipage}
+	\end{center}
 \end{document}

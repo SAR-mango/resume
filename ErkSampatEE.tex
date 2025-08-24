@@ -1,68 +1,63 @@
 \input{setup}
 \begin{document}
 	\maketitle
-	\begin{center}
-		\begin{minipage}{0.33\textwidth}
-			\href{https://www.linkedin.com/in/erk-sampat-500331245/}{LinkedIn}
-		\end{minipage}%
-		\begin{minipage}{0.33\textwidth}
-			\centering
-			esampat@ucsb.edu
-		\end{minipage}%
-		\begin{minipage}{0.33\textwidth}
-			\raggedleft\href{https://github.com/SAR-mango}{GitHub}
-		\end{minipage}
-	\end{center}
 	\section*{SKILLS}
-	\begin{minipage}{0.6\textwidth}
+	\hrule\medskip
+	\begin{minipage}{0.5\textwidth}
 		\begin{itemize}[itemsep=0em]
-			\item Power electronics
-			\item Analog and digital circuit design
+			\item Analog integrated circuit design
+			\item Power electronics; DC-DC converter design
+			\item Embedded systems (register-level STM32)
+			\item Digital logic design
 			\item Circuit simulation (LTSpice)
-			\item High-density PCB design/fab/assembly (KiCAD and Altium)
-			\item Data structures and algorithms; object-oriented programming
+			\item Hardware and software debugging
+			\item Transmission line and antenna theory
 		\end{itemize}
 	\end{minipage}%
-	\begin{minipage}{0.4\textwidth}
+	\begin{minipage}{0.5\textwidth}
 		\begin{itemize}[itemsep=0em]
-			\item C and C++; \texttt{git}; Linux terminal
-			\item Embedded systems
-			\item Electronics lab equipment
+			\item C and C++; MATLAB; \texttt{git}
+			\item Data structures and algorithms
+			\item Object-oriented programming
 			\item Technical documentation; \LaTeX
-			\item Hardware and software debugging
+			\item High-density PCB design (KiCAD, Altium)
+			\item Electronics lab instrumentation
+			\item SMD rework
 		\end{itemize}
 	\end{minipage}
 	\section*{PROJECTS}
+	\hrule\smallskip
 	\subsection{\href{https://github.com/SAR-mango/SinESC}{SinESC}}
-	Highly efficient brushless motor controller for drones. Supports sensorless field-oriented control for maximal power efficiency, resulting in increased flight time.
-	\subsection{\href{https://github.com/SAR-mango/Universal-Laser-Driver}{Universal Laser Driver}}
-	Low-power laser driver with ultra-wide input and output voltage range. Also built laser pointers of various wavelengths using the Universal Laser Driver.
-	\subsection{\href{https://github.com/SAR-mango/soldering-guide/blob/main/Soldering_Guide.pdf}{Soldering Guide}}
-	Comprehensive guide for soldering through-hole components by hand.
+	Highly efficient brushless motor controller for drones. Supports sensorless field-oriented control for maximal power efficiency, resulting in increased flight time and smoother operation.
+	\subsection{Delta-Sigma Audio Amplifier}
+	Circuit-level implementation of a delta-sigma data converter and full-bridge GaN output stage. Provides \qty{20}{\watt} of output power with efficiency over 90\%.
 	\subsection{RC Drones and Planes}
 	Built and flew remote-controlled drones and planes -- primarily first-person-view drones, glider-style airplanes, and nitromethane-powered airplanes. Set up autopilot and Iridium satellite communications for an airplane designed to detect forest fires. Won \href{https://www.hackster.io/team-sol/tinyml-aerial-forest-fire-detection-78ec6b}{first place} in tinyML Vision Challenge.
+	\subsection{\href{https://github.com/SAR-mango/Universal-Laser-Driver}{Universal Laser Driver}}
+	Low-power laser driver with ultra-wide input and output voltage range. Also built laser pointers of various wavelengths using the Universal Laser Driver.
 	\subsection{Solid-State Tesla Coil}
 	Converts line voltage to several hundred kilovolts, generating foot-long electrical arcs. Used to demonstrate high voltage and electromagnetic induction.
-	\section*{EDUCATION}
-	University of California, Santa Barbara -- B.S., Electrical Engineering (2022--2026)
 	\section*{EXPERIENCE}
+	\hrule\smallskip
+	\subsection{Undergraduate Researcher (July 2025--present)}
+		Designing a metalens (composed of TiO\textsubscript{2} nanofins) to be fabricated directly on top of a CMOS SPAD sensor. Applications include probabilistic computing and biosensors. Intend to publish in June 2026.
 	\subsection{Power Electronics Intern -- Astranis Space Technologies (June--September 2024)}
-	\begin{itemize}[topsep=0em,itemsep=0em]
+	\begin{itemize}[itemsep=0em]
 		\item Designed, tested, and documented a radiation testing board for 16 different high-voltage diodes. Implemented high-voltage biasing, clamping, and transient fault-detection circuitry. Hardware architecture to be reused for future radiation tests.
 		\item Designed a four-channel \qty{80}{\volt}/\qty{60}{\ampere} high-side GaN load stepping board for testing flight hardware. Implemented power stage, including linear current ramp soft-starting regime. Also realized under-voltage lockout, over-current protection, and over-voltage protection. Voltage/current telemetry made accessible to the user.
 		\item Wrote a script using Google's \texttt{openhtf} to automate radiation tests for op-amps.
-		\item Assisted in debugging faulty flyback converter in battery management system.
+		\item Assisted in debugging a faulty flyback converter in battery management system.
 	\end{itemize}
 	\subsection{Student Worker -- UCSB Department of Physics (April 2023--June 2024)}
 	\begin{center}
 		\begin{minipage}{0.5\textwidth}
-			\begin{itemize}[topsep=0em,itemsep=0em]
+			\begin{itemize}[itemsep=0em]
 				\item Set up labs for all undergraduate physics courses
 				\item Managed inventory; repaired broken test equipment
 			\end{itemize}
 		\end{minipage}%
 		\begin{minipage}{0.5\textwidth}
-			\begin{itemize}[topsep=0em,itemsep=0em]
+			\begin{itemize}[itemsep=0em]
 				\item Documented lab procedures
 				\item Designed electronics projects for lab curriculum
 			\end{itemize}

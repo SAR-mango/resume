@@ -1,7 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage[paper=letterpaper,margin=0.5in,footskip=0.25in]{geometry}
 \usepackage{amsmath}
-\usepackage{datetime}
 \usepackage{amssymb}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -16,23 +15,25 @@
 	linkcolor    = blue,    % color for internal links
 }
 
-\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
-
 \makeatletter
 \def\@maketitle{
-	\centering
-	\LARGE \@title \\
-	\Large \@author
-	\vskip\parskip
+	\begin{center}
+		\LARGE\@title\smallskip\par
+		\normalsize\@author\medskip\par
+		\href{https://www.linkedin.com/in/erk-sampat-500331245/}{LinkedIn}\hfill%
+		\href{esampat@ucsb.edu}{esampat@ucsb.edu}\hfill%
+		\href{https://sar-mango.github.io/}{Personal Website}\hfill%
+		\href{https://github.com/SAR-mango}{GitHub}\hfill
+	\end{center}
 }
 \makeatother
 
-\titleformat{\section}{\normalfont\scshape}{\textbf\thesection}{0em{ – }}{\textbf}[{\titlerule[0.75pt]}]
-\titleformat{\subsection}{\normalfont}{}{0em}{}
-\titlespacing*{\section}{0pt}{1em}{0.5em}
-\titlespacing*{\subsection}{0pt}{0.75em}{0.33em}
+\titleformat{\section}{}{}{0em}{\large\textbf}
+\titleformat{\subsection}{}{}{0em}{\textbf}
+\titlespacing*{\section}{0em}{0.75em}{0em}
+\titlespacing*{\subsection}{0em}{0.5em}{\lineskip}
 
 \title{\textbf{Erk Sampat}}
-\author{Electrical Engineering}
+\author{University of California, Santa Barbara -- B.S., Electrical Engineering (June 2026)}
 
 \pagenumbering{gobble}
